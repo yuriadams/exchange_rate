@@ -1,0 +1,18 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  host: localhost
+  username: postgres
+  password: postgres
+
+development:
+  <<: *default
+  database: exchange_rate_development
+
+test: &test
+  <<: *default
+  database: exchange_rate_test
+
+production:
+  url: postgres://wubbhkfsabrbfj:652d92bf4f55e27803f190c42a127f34abe70bbc3861f8da2f7abdd18edcdc09@ec2-184-73-199-72.compute-1.amazonaws.com:5432/deuvua9i1mscsn

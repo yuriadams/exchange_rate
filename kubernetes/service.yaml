@@ -1,0 +1,15 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: exchange-rate-service
+  labels:
+    k8s-app: exchange-rate
+spec:
+  selector:
+    app: exchange-rate
+  ports:
+   - name: web
+     protocol: TCP
+     port: 80
+     targetPort: 3001
+  type: LoadBalancer
