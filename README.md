@@ -14,6 +14,16 @@ for example:
   ExchangeRate.at(Date.today, 'EUR', 'NOK')  
 ```
 
+or
+
+via demo:
+http://abd07c33744d511e8830a020fc88053e-1829837008.us-west-1.elb.amazonaws.com/fx/2/USD
+
+which:
+2 = amount you want to convert and
+USD = counter currency
+
+So far, we have only base currency 'Euros'
 
 ### Tests
 To run the tests:
