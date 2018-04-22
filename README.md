@@ -1,20 +1,24 @@
-# Checkout
+# Exchange Rate
 
 ## Usage
 
-```shell
+Params:
+1. Date of the currency
+2. Base Currency
+3. Counter Currency
 
-```
+for example:
 
 ```ruby
 
+  ExchangeRate.at(Date.today, 'EUR', 'NOK')  
 ```
 
 
 ### Tests
 To run the tests:
 ```shell
-rspec
+bundle exec rspec
 ```
 
 ## License

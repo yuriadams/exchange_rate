@@ -7,3 +7,7 @@ gem 'activerecord'
 gem 'standalone_migrations'
 gem 'pg'
 gem 'whenever'
+
+group :development do
+  gem 'rspec'
+end
